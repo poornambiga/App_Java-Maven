@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
                    echo 'building docker image...'
-                   gv.buildImage(env.IMAGE_NAME)
+                   gv.buildImage()
 
                 }
             }
