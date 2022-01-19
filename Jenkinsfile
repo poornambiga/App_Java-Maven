@@ -7,7 +7,7 @@ pipeline {
         maven 'Maven'
     }
     environment {
-        IMAGE_NAME = 'ppornambiga/demo-app:jma-2.0'
+        IMAGE_NAME = 'poornambiga/demo-app:jma-2.0'
     }
     stages {
         stage("init") {
