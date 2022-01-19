@@ -15,7 +15,8 @@ pipeline {
                 script {
                     gv = load "script.groovy"
                 }
-                
+            }
+        }   
         stage('build app') {
             steps {
                script {
@@ -36,4 +37,4 @@ pipeline {
      }             
         
     }
-}
+
