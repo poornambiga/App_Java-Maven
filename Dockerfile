@@ -1,8 +1,5 @@
 FROM openjdk:8-jre-alpine
-
-EXPOSE 8080
-
-COPY ./target/*.jar /usr/app/
+EXPOSE 3080
+COPY ./target/java-maven-app-*.jar /usr/app/
 WORKDIR /usr/app
-
-ENTRYPOINT ["java", "-jar", "*.jar"]
+CMD java -jar java-maven-app-*.jar
